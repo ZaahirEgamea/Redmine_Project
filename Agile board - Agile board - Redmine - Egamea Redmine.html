@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<title>Agile board - Agile board - Redmine - Egamea Redmine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Redmine">
+<meta name="keywords" content="issue,bug,tracker">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="tlAdec111xQ2XhGkqQtvoGIsNV273Sbsigg7ndEEtpKc7MMY9iLyOTO71Ll0pJUI/xtjOCNx5vfzkwzhQaPS2Q==">
+<link rel="shortcut icon" href="http://www.egamea.com:3000/favicon.ico">
+<link rel="stylesheet" media="all" href="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/jquery-ui-1.css">
+<link rel="stylesheet" media="all" href="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/application.css">
+<link rel="stylesheet" media="all" href="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/responsive.css">
+
+<script src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/jquery-1.js"></script>
+<script src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/application.js"></script>
+<script src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/responsive.js"></script>
+<script>
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+<script src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/theme.js"></script>
+<link rel="stylesheet" media="screen" href="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/redmine_agile.css"> <script src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/redirect.js"></script>
+<link rel="stylesheet" media="screen" href="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/tweaks.css">
+
+
+<!-- page specific tags -->
+<script>
+//<![CDATA[
+var datepickerOptions={dateFormat: 'yy-mm-dd', firstDay: 1, showOn: 'button', buttonImageOnly: true, buttonImage: '/images/calendar.png', showButtonPanel: true, showWeek: true, showOtherMonths: true, selectOtherMonths: true, changeMonth: true, changeYear: true, beforeShow: beforeShowDatePicker};
+//]]>
+</script>  <script src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/redmine_agile.js"></script>
+  <script src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/jquery.js"></script>
+  <link rel="stylesheet" media="screen" href="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/context_menu.css">
+  <link rel="stylesheet" media="print" href="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/redmine_agile.css">
+</head>
+<body class="theme-Circle project-redmine controller-agile_boards action-index">
+<div id="wrapper">
+
+<div class="flyout-menu js-flyout-menu">
+
+
+        <div class="flyout-menu__search">
+            <form action="/projects/redmine/search" accept-charset="UTF-8" method="get"><input name="utf8" value="✓" type="hidden">
+            
+            <label class="search-magnifier search-magnifier--flyout" for="flyout-search">⚲</label>
+            <input name="q" id="flyout-search" class="small js-search-input" placeholder="Search" type="text">
+</form>        </div>
+
+        <div class="flyout-menu__avatar ">
+                <a href="http://www.egamea.com:3000/users/29"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/c36ea607b53e4c01080e274d3fbe2502.png" width="80" height="80"></a>
+            <a class="user active" href="http://www.egamea.com:3000/users/29">zaahir</a>
+        </div>
+
+        <h3>Project</h3>
+        <span class="js-project-menu"></span>
+
+    <h3>General</h3>
+    <span class="js-general-menu"></span>
+
+    <span class="js-sidebar flyout-menu__sidebar"></span>
+
+    <h3>Profile</h3>
+    <span class="js-profile-menu"></span>
+
+</div>
+
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="my-account" href="http://www.egamea.com:3000/my/account">My account</a></li>
+<li><a class="logout" rel="nofollow" data-method="post" href="http://www.egamea.com:3000/logout">Sign out</a></li></ul>    </div>
+    <div id="loggedas">Logged in as <a class="user active" href="http://www.egamea.com:3000/users/29">zaahir</a></div>
+    <ul><li><a class="home" href="http://www.egamea.com:3000/">Home</a></li>
+<li><a class="projects" href="http://www.egamea.com:3000/projects">Projects</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/projects/redmine/search" accept-charset="UTF-8" method="get"><input name="utf8" value="✓" type="hidden">
+        
+        <label for="q">
+          <a accesskey="4" href="http://www.egamea.com:3000/projects/redmine/search">Search</a>:
+        </label>
+        <input name="q" id="q" size="20" class="small" accesskey="f" type="text">
+</form>        <span class="jump-box-arrow"></span><select name="project_quick_jump_box" id="project_quick_jump_box" onchange="if (this.value != '') { window.location = this.value; }"><option value="">Jump to a project...</option><option value="" disabled="disabled">---</option><option value="/projects/egamea?jump=agile">Egamea</option><option value="/projects/conjurescape?jump=agile">&nbsp;&nbsp;» Conjurescape</option><option value="/projects/conjurescape-art?jump=agile">&nbsp;&nbsp;&nbsp;&nbsp;» Conjurescape Art</option><option value="/projects/conjurescape-code?jump=agile">&nbsp;&nbsp;&nbsp;&nbsp;» Conjurescape Code</option><option value="/projects/ge-next-gen-sts?jump=agile">&nbsp;&nbsp;» GE Next-Gen STS</option><option value="/projects/redmine?jump=agile" selected="selected">&nbsp;&nbsp;» Redmine</option></select>
+    </div>
+
+    <h1><a class="root" href="http://www.egamea.com:3000/projects/egamea?jump=agile">Egamea</a> » <a class="ancestor" href="http://www.egamea.com:3000/projects/tech-support?jump=agile">Tech Support</a> » Redmine</h1>
+
+    <div id="main-menu">
+        <ul><li><a class="overview" href="http://www.egamea.com:3000/projects/redmine">Overview</a></li>
+<li><a class="activity" href="http://www.egamea.com:3000/projects/redmine/activity">Activity</a></li>
+<li><a class="issues" href="http://www.egamea.com:3000/projects/redmine/issues">Issues</a></li>
+<li><a accesskey="7" class="new-issue" href="http://www.egamea.com:3000/projects/redmine/issues/new">New issue</a></li>
+<li><a class="gantt" href="http://www.egamea.com:3000/projects/redmine/issues/gantt">Gantt</a></li>
+<li><a class="agile selected" href="http://www.egamea.com:3000/projects/redmine/agile/board">Agile</a></li>
+<li><a class="calendar" href="http://www.egamea.com:3000/projects/redmine/issues/calendar">Calendar</a></li>
+<li><a class="news" href="http://www.egamea.com:3000/projects/redmine/news">News</a></li>
+<li><a class="documents" href="http://www.egamea.com:3000/projects/redmine/documents">Documents</a></li>
+<li><a class="wiki" href="http://www.egamea.com:3000/projects/redmine/wiki">Wiki</a></li>
+<li><a class="files" href="http://www.egamea.com:3000/projects/redmine/files">Files</a></li>
+<li><a class="settings" href="http://www.egamea.com:3000/projects/redmine/settings">Settings</a></li></ul>
+    </div>
+</div>
+
+<div id="main" class="">
+
+    <div id="sidebar">
+         
+  <h3>Agile Light free version</h3>
+<ul>
+  <li><a href="http://www.redminecrm.com/projects/agile/pages/last?from=light_upgrade">Upgrade to PRO</a>
+</li>
+<li><a href="http://demo.redminecrm.com/projects/agile/agile/board?query_id=4?from=light_live_preview">PRO version live demo</a>
+</li>
+<li><a href="http://www.redminecrm.com/pages/plugins?from=light_more_plugins">Find more RedmineCRM plugins</a>
+</li>
+</ul>
+
+ 
+  <h3>Issues</h3>
+
+  <ul>
+  <li><a href="http://www.egamea.com:3000/projects/redmine/issues?set_filter=1">View all issues</a></li>
+  <li><a href="http://www.egamea.com:3000/projects/redmine/issues/report">Summary</a></li>
+
+  <li><a href="http://www.egamea.com:3000/projects/redmine/issues/calendar">Calendar</a></li>
+  <li><a href="http://www.egamea.com:3000/projects/redmine/issues/gantt">Gantt</a></li>
+  <li><a href="http://www.egamea.com:3000/projects/redmine/agile/board">Agile board</a></li>
+  </ul>
+
+    <div class="project-members">
+  <h3>Members</h3>
+      <span class="assignable-user ui-draggable ui-draggable-handle" data-id="6"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/0097b750030ee10b73076ce45f6a0623.png" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/6">Admin E.</a>
+      <br>
+      </span>
+      <span class="assignable-user ui-draggable ui-draggable-handle" data-id="5"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/6dbc286a095e5a9d9b199b81b98690d0.png" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/5">Jake T.</a>
+      <br>
+      </span>
+      <span class="assignable-user ui-draggable ui-draggable-handle" data-id="15"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/3294c0bd7b0b96e4423233bd577ab381.png" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/15">Keagan F.</a>
+      <br>
+      </span>
+      <span class="assignable-user ui-draggable ui-draggable-handle" data-id="1"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/daa2cbecec0680723ef5e7df4e4b248b.jpg" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/1">Stephen C.</a>
+      <br>
+      </span>
+      <span class="assignable-user ui-draggable ui-draggable-handle" data-id="29"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/c36ea607b53e4c01080e274d3fbe2502_002.png" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/29">Zaahir A.</a>
+      <br>
+      </span>
+</div>
+
+  <h3>Agile charts</h3>
+<ul>
+  <li><a class="" href="http://www.egamea.com:3000/projects/redmine/agile/charts?chart=issues_burndown">Issues burndown</a></li>
+</ul>
+
+
+        
+    </div>
+
+    <div id="content">
+        
+        <div class="contextual">
+</div>
+
+<h2>Agile board</h2>
+
+<form id="query_form" onsubmit="DisableNullFields()" action="/projects/redmine/agile/board" accept-charset="UTF-8" method="get"><input name="utf8" value="✓" type="hidden">    
+  <div id="query_form_with_buttons" class="hide-when-print">
+    <input name="set_filter" id="set_filter" value="1" type="hidden">
+    <div id="query_form_content">
+      <fieldset id="filters" class="collapsible ">
+        <legend onclick="toggleFieldset(this);">Filters</legend>
+        <div style="">
+          <script>
+//<![CDATA[
+
+var operatorLabels = {"=":"is","!":"is not","o":"open","c":"closed","!*":"none","*":"any","\u003e=":"\u003e=","\u003c=":"\u003c=","\u003e\u003c":"between","\u003ct+":"in less than","\u003et+":"in more than","\u003e\u003ct+":"in the next","t+":"in","t":"today","ld":"yesterday","w":"this week","lw":"last week","l2w":"last 2 weeks","m":"this month","lm":"last month","y":"this year","\u003et-":"less than days ago","\u003ct-":"more than days ago","\u003e\u003ct-":"in the past","t-":"days ago","~":"contains","!~":"doesn't contain","=p":"any issues in project","=!p":"any issues not in project","!p":"no issues in project","*o":"any open issues","!o":"no open issues"};
+var operatorByType = {"list":["=","!"],"list_status":["o","=","!","c","*"],"list_optional":["=","!","!*","*"],"list_subprojects":["*","!*","="],"date":["=","\u003e=","\u003c=","\u003e\u003c","\u003ct+","\u003et+","\u003e\u003ct+","t+","t","ld","w","lw","l2w","m","lm","y","\u003et-","\u003ct-","\u003e\u003ct-","t-","!*","*"],"date_past":["=","\u003e=","\u003c=","\u003e\u003c","\u003et-","\u003ct-","\u003e\u003ct-","t-","t","ld","w","lw","l2w","m","lm","y","!*","*"],"string":["=","~","!","!~","!*","*"],"text":["~","!~","!*","*"],"integer":["=","\u003e=","\u003c=","\u003e\u003c","!*","*"],"float":["=","\u003e=","\u003c=","\u003e\u003c","!*","*"],"relation":["=","=p","=!p","!p","*o","!o","!*","*"],"tree":["=","~","!*","*"]};
+var availableFilters = {"tracker_id":{"type":"list","name":"Tracker","values":[["Feature","2"],["Bug","1"],["Support","3"]]},"priority_id":{"type":"list","name":"Priority","values":[["Low","1"],["Normal","2"],["High","3"],["Urgent","4"],["Immediate","5"]]},"author_id":{"type":"list","name":"Author","values":[["\u003c\u003c me \u003e\u003e","me"],["Admin E.","6"],["Jake T.","5"],["Keagan F.","15"],["Stephen C.","1"],["Zaahir A.","29"]]},"assigned_to_id":{"type":"list_optional","name":"Assignee","values":[["\u003c\u003c me \u003e\u003e","me"],["Admin E.","6"],["Jake T.","5"],["Keagan F.","15"],["Stephen C.","1"],["Zaahir A.","29"]]},"member_of_group":{"type":"list_optional","name":"Assignee's group","values":[["Anonymous users","2"],["Non member users","3"]]},"assigned_to_role":{"type":"list_optional","name":"Assignee's role","values":[["Manager","3"],["Developer","4"],["Reporter","5"]]},"subject":{"type":"text","name":"Subject"},"created_on":{"type":"date_past","name":"Created"},"updated_on":{"type":"date_past","name":"Updated"},"closed_on":{"type":"date_past","name":"Closed"},"start_date":{"type":"date","name":"Start date"},"due_date":{"type":"date","name":"Due date"},"estimated_hours":{"type":"float","name":"Estimated time"},"done_ratio":{"type":"integer","name":"% Done"},"parent_issue_id":{"type":"relation","name":"Parent task"},"has_sub_issues":{"type":"list","name":"Has sub issues","values":["yes","no"]},"version_status":{"type":"list","name":"Target version's status","values":[["open","open"],["locked","locked"],["closed","closed"]]},"parent_issue_tracker_id":{"type":"list","name":"Parent tracker","values":["Bug","Feature","Support"]},"relates":{"type":"relation","name":"Related to"},"duplicates":{"type":"relation","name":"Duplicates"},"duplicated":{"type":"relation","name":"Duplicated by"},"blocks":{"type":"relation","name":"Blocks"},"blocked":{"type":"relation","name":"Blocked by"},"precedes":{"type":"relation","name":"Precedes"},"follows":{"type":"relation","name":"Follows"},"copied_to":{"type":"relation","name":"Copied to"},"copied_from":{"type":"relation","name":"Copied from"}};
+var labelDayPlural = "days";
+var allProjects = [["Egamea","13"],["-- Admin","11"],["-- Conjurescape","1"],["---- Conjurescape Art","2"],["---- Conjurescape Code","3"],["-- GE Next-Gen STS","14"],["-- Tech Support","5"],["---- Hardware","9"],["---- Joomla","10"],["---- Mail","12"],["---- Redmine","6"],["SimmLabs","16"],["-- Sales and Marketing","15"],["---- SimmLabs graphical upgrade phase 1","17"]];
+$(document).ready(function(){
+  initFilters();
+});
+
+//]]>
+</script>
+<table id="filters-table">
+</table>
+
+<div class="add-filter">
+<label for="add_filter_select">Add filter</label>
+<select id="add_filter_select"><option value="" selected="selected">&nbsp;</option>
+<option value="tracker_id">Tracker</option>
+<option value="priority_id">Priority</option>
+<option value="author_id">Author</option>
+<option value="assigned_to_id">Assignee</option>
+<option value="subject">Subject</option>
+<option value="estimated_hours">Estimated time</option>
+<option value="done_ratio">% Done</option>
+<option value="has_sub_issues">Has sub issues</option>
+<option value="version_status">Target version's status</option>
+<option value="parent_issue_tracker_id">Parent tracker</option><optgroup label="Assignee"><option value="member_of_group">Assignee's group</option>
+<option value="assigned_to_role">Assignee's role</option></optgroup><optgroup label="Date"><option value="created_on">Created</option>
+<option value="updated_on">Updated</option>
+<option value="closed_on">Closed</option>
+<option value="start_date">Start date</option>
+<option value="due_date">Due date</option></optgroup><optgroup label="Related issues"><option value="parent_issue_id">Parent task</option>
+<option value="relates">Related to</option>
+<option value="duplicates">Duplicates</option>
+<option value="duplicated">Duplicated by</option>
+<option value="blocks">Blocks</option>
+<option value="blocked">Blocked by</option>
+<option value="precedes">Precedes</option>
+<option value="follows">Follows</option>
+<option value="copied_to">Copied to</option>
+<option value="copied_from">Copied from</option></optgroup></select>
+</div>
+
+<input name="f[]" id="f_" value="" type="hidden">
+
+        </div>
+      </fieldset>
+      <fieldset class="collapsible collapsed">
+        <legend onclick="toggleFieldset(this);">Options</legend>
+        <div style="display: none;">
+          <table class="options">
+              <tbody><tr>
+                <td>
+                  Board columns
+                </td>
+                <td class="card-fields">
+                  <input name="f[]" id="f_" value="status_id" type="hidden"><input name="op[status_id]" id="op_status_id" value="=" type="hidden"><label class="floating"><input name="f_status[]" id="f_status_" value="1" checked="checked" type="checkbox">All Tasks Prioritised</label> <label class="floating"><input name="f_status[]" id="f_status_" value="4" checked="checked" type="checkbox">Daily Plan</label> <label class="floating"><input name="f_status[]" id="f_status_" value="2" checked="checked" type="checkbox">In Progress</label> <label class="floating"><input name="f_status[]" id="f_status_" value="67" type="checkbox">Monday 3 July</label> <label class="floating"><input name="f_status[]" id="f_status_" value="66" checked="checked" type="checkbox">Friday 30 June</label> <label class="floating"><input name="f_status[]" id="f_status_" value="65" checked="checked" type="checkbox">Thursday 29 June</label> <label class="floating"><input name="f_status[]" id="f_status_" value="64" checked="checked" type="checkbox">Wednesday 28 June</label> <label class="floating"><input name="f_status[]" id="f_status_" value="63" checked="checked" type="checkbox">Tuesday 27 June</label> <label class="floating"><input name="f_status[]" id="f_status_" value="62" checked="checked" type="checkbox">Monday 26 June</label> <label class="floating"><input name="f_status[]" id="f_status_" value="61" checked="checked" type="checkbox">Friday 23 June</label> <label class="floating"><input name="f_status[]" id="f_status_" value="18" checked="checked" type="checkbox">Thursday 20 April</label> <label class="floating"><input name="f_status[]" id="f_status_" value="3" checked="checked" type="checkbox">Resolved</label> <label class="floating"><input name="f_status[]" id="f_status_" value="11" checked="checked" type="checkbox">On Hold</label> <label class="floating"><input name="f_status[]" id="f_status_" value="5" type="checkbox">Closed</label> <label class="floating"><input name="f_status[]" id="f_status_" value="6" type="checkbox">Rejected</label> <label class="floating"><input name="f_status[]" id="f_status_" value="8" type="checkbox">Tuesday 27 March</label>
+                </td>
+              </tr>
+            <tr>
+              <td>Card fields</td>
+              <td class="card-fields">
+                <label class="floating"><input name="c[]" id="c_" value="id" type="checkbox">Issue ID</label> <label class="floating"><input name="c[]" id="c_" value="project" type="checkbox">Project</label> <label class="floating"><input name="c[]" id="c_" value="tracker" checked="checked" type="checkbox">Tracker</label> <label class="floating"><input name="c[]" id="c_" value="estimated_hours" type="checkbox">Estimated time</label> <label class="floating"><input name="c[]" id="c_" value="spent_hours" type="checkbox">Spent time</label> <label class="floating"><input name="c[]" id="c_" value="done_ratio" type="checkbox">% Done</label> <label class="floating"><input name="c[]" id="c_" value="day_in_state" type="checkbox">In status</label> <label class="floating"><input name="c[]" id="c_" value="parent" type="checkbox">Parent task</label> <label class="floating"><input name="c[]" id="c_" value="assigned_to" checked="checked" type="checkbox">Assignee</label> <label class="floating"><input name="c[]" id="c_" value="relations" type="checkbox">Related issues</label> <label class="floating"><input name="c[]" id="c_" value="last_comment" type="checkbox">Last comment</label>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </fieldset>
+    </div>
+    <p class="buttons">
+    <a href="#" onclick='$("#query_form").submit(); return false;' class="icon icon-checked">Apply</a>
+    <a class="icon icon-reload" href="http://www.egamea.com:3000/projects/redmine/agile/board?set_filter=1">Clear</a>
+    </p>
+
+  </div>
+</form>
+
+    <form action="/projects/redmine/agile/board" accept-charset="UTF-8" method="post"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="tlAdec111xQ2XhGkqQtvoGIsNV273Sbsigg7ndEEtpKc7MMY9iLyOTO71Ll0pJUI/xtjOCNx5vfzkwzhQaPS2Q==" type="hidden">  <input name="back_url" id="back_url" value="/projects/redmine/agile/board?c%5B%5D=tracker&amp;c%5B%5D=assigned_to&amp;f%5B%5D=status_id&amp;f_status%5B%5D=1&amp;f_status%5B%5D=4&amp;f_status%5B%5D=2&amp;f_status%5B%5D=66&amp;f_status%5B%5D=65&amp;f_status%5B%5D=64&amp;f_status%5B%5D=63&amp;f_status%5B%5D=62&amp;f_status%5B%5D=61&amp;f_status%5B%5D=18&amp;f_status%5B%5D=3&amp;f_status%5B%5D=11&amp;op%5Bstatus_id%5D=%3D&amp;set_filter=1&amp;utf8=%E2%9C%93" type="hidden">
+  <input name="project_id" id="project_id" value="6" type="hidden">
+  <div class="agile-board autoscroll">
+    <div class="flash error" style="display: none;" id="agile-board-errors">
+    </div>
+    <div class="lock"> </div><div class="container-fixed"><table class="list issues-board   sticky" style="display: none; top: 0px; position: fixed; width: 1449px; z-index: 1;">
+    
+      <thead>
+      <tr><th data-column-id="1" style="width: 110px;">All Tasks Prioritised (<span class="count">8</span>)</th><th data-column-id="4" style="width: 110px;">Daily Plan (<span class="count">0</span>)</th><th data-column-id="2" style="width: 110px;">In Progress (<span class="count">2</span>)</th><th data-column-id="66" style="width: 110px;">Friday 30 June (<span class="count">0</span>)</th><th data-column-id="65" style="width: 110px;">Thursday 29 June (<span class="count">0</span>)</th><th data-column-id="64" style="width: 110px;">Wednesday 28 June (<span class="count">0</span>)</th><th data-column-id="63" style="width: 110px;">Tuesday 27 June (<span class="count">0</span>)</th><th data-column-id="62" style="width: 110px;">Monday 26 June (<span class="count">0</span>)</th><th data-column-id="61" style="width: 110px;">Friday 23 June (<span class="count">0</span>)</th><th data-column-id="18" style="width: 110px;">Thursday 20 April (<span class="count">0</span>)</th><th data-column-id="3" style="width: 110px;">Resolved (<span class="count">0</span>)</th><th data-column-id="11" style="width: 110px;">On Hold (<span class="count">0</span>)</th></tr>
+      </thead>
+          </table><table class="list issues-board  ">
+    
+      <thead>
+      <tr><th data-column-id="1">All Tasks Prioritised (<span class="count">8</span>)</th><th data-column-id="4">Daily Plan (<span class="count">0</span>)</th><th data-column-id="2">In Progress (<span class="count">2</span>)</th><th data-column-id="66">Friday 30 June (<span class="count">0</span>)</th><th data-column-id="65">Thursday 29 June (<span class="count">0</span>)</th><th data-column-id="64">Wednesday 28 June (<span class="count">0</span>)</th><th data-column-id="63">Tuesday 27 June (<span class="count">0</span>)</th><th data-column-id="62">Monday 26 June (<span class="count">0</span>)</th><th data-column-id="61">Friday 23 June (<span class="count">0</span>)</th><th data-column-id="18">Thursday 20 April (<span class="count">0</span>)</th><th data-column-id="3">Resolved (<span class="count">0</span>)</th><th data-column-id="11">On Hold (<span class="count">0</span>)</th></tr>
+      </thead>
+          <tbody><tr style="text-align: center;white-space: nowrap;" class="issue odd">
+            <td class="issue-status-col    ui-sortable" data-id="1">
+                <div class="issue-card hascontextmenu ui-sortable-handle ui-droppable" data-id="10" style="">
+      <span class="fields">
+          <p class="issue-id ">
+            <input name="ids[]" value="10" class="checkbox" type="checkbox">
+              <strong>Feature #10</strong>
+            
+          </p>
+          <p class="name"><a href="http://www.egamea.com:3000/issues/10">Trello-like agile board functionality.</a></p>
+          <p class="attributes">
+          </p>
+
+
+          <!-- Check list -->
+            <p class="info assigned-user" style="">
+              <span class="user"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/daa2cbecec0680723ef5e7df4e4b248b.jpg" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/1">Stephen C.</a></span>
+            </p>
+
+
+      </span>
+</div>
+
+                <div class="issue-card hascontextmenu ui-sortable-handle ui-droppable" data-id="15" style="">
+      <span class="fields">
+          <p class="issue-id ">
+            <input name="ids[]" value="15" class="checkbox" type="checkbox">
+              <strong>Feature #15</strong>
+            
+          </p>
+          <p class="name"><a href="http://www.egamea.com:3000/issues/15">Implement SSL certificates.</a></p>
+          <p class="attributes">
+          </p>
+
+
+          <!-- Check list -->
+            <p class="info assigned-user" style="display: none;">
+              <span class="user"></span>
+            </p>
+
+
+      </span>
+</div>
+
+                <div class="issue-card hascontextmenu ui-sortable-handle ui-droppable" data-id="16" style="">
+      <span class="fields">
+          <p class="issue-id ">
+            <input name="ids[]" value="16" class="checkbox" type="checkbox">
+              <strong>Feature #16</strong>
+            
+          </p>
+          <p class="name"><a href="http://www.egamea.com:3000/issues/16">Script daily repo updates.</a></p>
+          <p class="attributes">
+          </p>
+
+
+          <!-- Check list -->
+            <p class="info assigned-user" style="display: none;">
+              <span class="user"></span>
+            </p>
+
+
+      </span>
+</div>
+
+                <div class="issue-card hascontextmenu ui-sortable-handle ui-droppable" data-id="358" style="">
+      <span class="fields">
+          <p class="issue-id ">
+            <input name="ids[]" value="358" class="checkbox" type="checkbox">
+              <strong>Feature #358</strong>
+            
+          </p>
+          <p class="name"><a href="http://www.egamea.com:3000/issues/358">Kanban Cards: Display actual time spent on task on each card. </a></p>
+          <p class="attributes">
+          </p>
+
+
+          <!-- Check list -->
+            <p class="info assigned-user" style="">
+              <span class="user"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/c36ea607b53e4c01080e274d3fbe2502_002.png" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/29">Zaahir A.</a></span>
+            </p>
+
+
+      </span>
+</div>
+
+                <div class="issue-card hascontextmenu ui-sortable-handle ui-droppable" data-id="359" style="">
+      <span class="fields">
+          <p class="issue-id ">
+            <input name="ids[]" value="359" class="checkbox" type="checkbox">
+              <strong>Feature #359</strong>
+            
+          </p>
+          <p class="name"><a href="http://www.egamea.com:3000/issues/359">Kanban Columns: The sum of the estimated times should display in the heading of each column </a></p>
+          <p class="attributes">
+          </p>
+
+
+          <!-- Check list -->
+            <p class="info assigned-user" style="">
+              <span class="user"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/c36ea607b53e4c01080e274d3fbe2502_002.png" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/29">Zaahir A.</a></span>
+            </p>
+
+
+      </span>
+</div>
+
+                <div class="issue-card hascontextmenu ui-sortable-handle ui-droppable" data-id="360" style="">
+      <span class="fields">
+          <p class="issue-id ">
+            <input name="ids[]" value="360" class="checkbox" type="checkbox">
+              <strong>Feature #360</strong>
+            
+          </p>
+          <p class="name"><a href="http://www.egamea.com:3000/issues/360">Kanban Columns: The sum of the actual time spent on each task should display in the heading of ea...</a></p>
+          <p class="attributes">
+          </p>
+
+
+          <!-- Check list -->
+            <p class="info assigned-user" style="">
+              <span class="user"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/c36ea607b53e4c01080e274d3fbe2502_002.png" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/29">Zaahir A.</a></span>
+            </p>
+
+
+      </span>
+</div>
+
+                <div class="issue-card hascontextmenu ui-sortable-handle ui-droppable" data-id="361" style="">
+      <span class="fields">
+          <p class="issue-id ">
+            <input name="ids[]" value="361" class="checkbox" type="checkbox">
+              <strong>Feature #361</strong>
+            
+          </p>
+          <p class="name"><a href="http://www.egamea.com:3000/issues/361">Set up a GutHub repository for your project, you can call it Redmine Adjustments</a></p>
+          <p class="attributes">
+          </p>
+
+
+          <!-- Check list -->
+            <p class="info assigned-user" style="">
+              <span class="user"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/c36ea607b53e4c01080e274d3fbe2502_002.png" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/29">Zaahir A.</a></span>
+            </p>
+
+
+      </span>
+</div>
+
+                <div class="issue-card hascontextmenu ui-sortable-handle ui-droppable" data-id="362" style="">
+      <span class="fields">
+          <p class="issue-id ">
+            <input name="ids[]" value="362" class="checkbox" type="checkbox">
+              <strong>Feature #362</strong>
+            
+          </p>
+          <p class="name"><a href="http://www.egamea.com:3000/issues/362">Install new version control software and add the repository created on GitHub </a></p>
+          <p class="attributes">
+          </p>
+
+
+          <!-- Check list -->
+            <p class="info assigned-user" style="">
+              <span class="user"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/c36ea607b53e4c01080e274d3fbe2502_002.png" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/29">Zaahir A.</a></span>
+            </p>
+
+
+      </span>
+</div>
+
+              
+
+            </td>
+
+            <td class="issue-status-col    ui-sortable" data-id="4">
+              
+
+            </td>
+
+            <td class="issue-status-col    ui-sortable" data-id="2">
+                <div class="issue-card hascontextmenu ui-sortable-handle ui-droppable" data-id="356" style="">
+      <span class="fields">
+          <p class="issue-id ">
+            <input name="ids[]" value="356" class="checkbox" type="checkbox">
+              <strong>Feature #356</strong>
+            
+          </p>
+          <p class="name"><a href="http://www.egamea.com:3000/issues/356">Kanban Cards: Display estimated time of task on each card</a></p>
+          <p class="attributes">
+          </p>
+
+
+          <!-- Check list -->
+            <p class="info assigned-user" style="">
+              <span class="user"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/c36ea607b53e4c01080e274d3fbe2502_002.png" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/29">Zaahir A.</a></span>
+            </p>
+
+
+      </span>
+</div>
+
+                <div class="issue-card hascontextmenu ui-sortable-handle ui-droppable" data-id="355" style="">
+      <span class="fields">
+          <p class="issue-id ">
+            <input name="ids[]" value="355" class="checkbox" type="checkbox">
+              <strong>Feature #355</strong>
+            
+          </p>
+          <p class="name"><a href="http://www.egamea.com:3000/issues/355">Kanban: Hide the panel on the left of the board </a></p>
+          <p class="attributes">
+          </p>
+
+
+          <!-- Check list -->
+            <p class="info assigned-user" style="">
+              <span class="user"><img default="default" rating="PG" alt="" title="" class="gravatar" ssl="false" src="Agile%20board%20-%20Agile%20board%20-%20Redmine%20-%20Egamea%20Redmine_files/c36ea607b53e4c01080e274d3fbe2502_002.png" width="14" height="14"> <a class="user active" href="http://www.egamea.com:3000/users/29">Zaahir A.</a></span>
+            </p>
+
+
+      </span>
+</div>
+
+              
+
+            </td>
+
+            <td class="issue-status-col    ui-sortable" data-id="66">
+              
+
+            </td>
+
+            <td class="issue-status-col    ui-sortable" data-id="65">
+              
+
+            </td>
+
+            <td class="issue-status-col    ui-sortable" data-id="64">
+              
+
+            </td>
+
+            <td class="issue-status-col    ui-sortable" data-id="63">
+              
+
+            </td>
+
+            <td class="issue-status-col    ui-sortable" data-id="62">
+              
+
+            </td>
+
+            <td class="issue-status-col    ui-sortable" data-id="61">
+              
+
+            </td>
+
+            <td class="issue-status-col    ui-sortable" data-id="18">
+              
+
+            </td>
+
+            <td class="issue-status-col    ui-sortable" data-id="3">
+              
+
+            </td>
+
+            <td class="issue-status-col    ui-sortable" data-id="11">
+              
+
+            </td>
+
+          </tr>
+
+    </tbody></table></div>
+</div>
+
+</form>
+
+
+  <script type="text/javascript">
+    var agileBoard = new AgileBoard({
+      project_id: '6',
+      update_agile_board_path: '/agile/board',
+      issues_path: '/issues',
+      create_issue_path: '/projects/redmine/agile/create_issue'
+    });
+   // document.getElementById('sidebar').style.display='none'; //hide the side bar
+  </script>
+
+<!-- Start my code -->
+  </p>
+          <p class="name"><a href="http://www.egamea.com:3000/issues/355">Kanban: Hide the panel on the left of the board </a></p>
+          <span id="hr"> </span>:
+          <span id="minutess"> </span>:
+          <span id="seconds"></span>
+
+
+          <p class="attributes">
+          </p>
+
+<script type="text/javascript">
+        var sec = 0;
+function pad ( val ) { return val > 9 ? val : "0" + val; }
+    setInterval( function(){
+        document.getElementById("seconds").innerHTML=pad(++sec%60);
+        document.getElementById("minutess").innerHTML=pad(parseInt(sec/60,10));
+        document.getElementById("hr").innerHTML=pad(parseInt(Math.floor(sec/3600)));
+    }, 1000);
+</script>
+<!-- End my code -->
+
+<script>
+//<![CDATA[
+function callGetToolTipInfo()
+      {
+        
+        var url = 'http://www.egamea.com:3000/agile/issue_tooltip';
+        agileBoard.getToolTipInfo(this, url);
+      }
+      $('.tooltip').mouseenter(callGetToolTipInfo);
+    
+//]]>
+</script>
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> © 2006-2017 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+
+
+</body></html>
